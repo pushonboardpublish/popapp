@@ -1,18 +1,14 @@
 {
-  "name": "react",
-  "version": "0.0.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
+  "name": "popapp",
+  "version": "1.0.0",
+  "description": "PopApp - Modern Pop-up Management",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "ramg": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start",
+    "install:all": "cd backend && npm install && cd ../frontend && npm install"
   },
   "devDependencies": {
-    "react-scripts": "latest"
+    "concurrently": "^8.0.0"
   }
 }
